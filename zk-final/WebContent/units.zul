@@ -1,0 +1,46 @@
+<?page title="Units" contentType="text/html;charset=UTF-8"?>
+<window title="" border="none" width="400px" closable="true"
+	apply="mii.zk.controller.UnitController">
+	<vbox>
+		<groupbox>
+			<grid style="border:0px">
+				<columns visible="false">
+					<column label="" width="50px"></column>
+					<column label="" width="300px"></column>
+				</columns>
+				<rows>
+					<row>
+						<label value="Kode"></label>
+						<textbox id="txtKode" width="290px"></textbox>
+					</row>
+					<row>
+						<label value="Nama"></label>
+						<textbox id="txtNama" width="290px"></textbox>
+					</row>
+				</rows>
+			</grid>
+		</groupbox>
+		<div align="right" style="padding:2px">
+			<hbox>
+				<textbox id="txtId" visible="false"></textbox>
+				<button id="btnHapus" label="Hapus"></button>
+				<button id="btnBaru" label="Baru"></button>
+				<button id="btnSimpan" label="Simpan"></button>
+			</hbox>
+		</div>
+		<listbox id="listUnit"
+			emptyMessage="No Units found in the result" height="150px">
+			<listhead>
+				<listheader label="Kode" />
+				<listheader label="Nama Unit" />
+			</listhead>
+			<template name="model">
+				<listitem value="${each}">
+					<listcell label="${each.kode}" />
+					<listcell label="${each.nama}" />
+				</listitem>
+			</template>
+		</listbox>
+
+	</vbox>
+</window>

@@ -1,0 +1,54 @@
+<?page title="Auto Generated index.zul"?>
+<window width="100%" style="padding:0px" id="main" border="none"
+	apply="mii.zk.controller.IndexController" height="100%">
+	<borderlayout style="background:#81DAF5;">
+		<north size="90px" border="0" style="background:#81DAF5;">
+			<div style="padding:5px">
+				<hbox>
+					<image src="img/logo.png" width="150px"
+						height="80px">
+					</image>
+					<vbox style="margin-top:10px">
+						<label style="font-size:20px;font-weight:bold"
+							value="HUMAN RESOURCES MANAGEMENT">
+						</label>
+						<label style="font-size:15px"
+							value="Help you organize, staff, pay, and develop">
+						</label>
+					</vbox>
+				</hbox>
+			</div>
+		</north>
+		<west width="150px" title="Navigasi" flex="true"
+			margins="0,5,5,0" collapsible="true" open="true">
+			<div style="padding:2px" align="center">
+				<vbox align="center">
+					<toolbarbutton tooltiptext="Units"
+						image="/img/unit.png" id="btnUnit" />
+					<space />
+					<label value="Units"></label>
+					<space height="2px" />
+					<toolbarbutton tooltiptext="Employees"
+						image="/img/employee.png" />
+					<space />
+					<label value="Employees"></label>
+				</vbox>
+			</div>
+		</west>
+		<center flex="true" style="background:#CEECF5;">
+			<div id="contentDiv"
+				style="height:200px;overflow:auto;padding:5px;">
+
+				<!-- content -->
+				
+				<!-- end content -->
+
+			</div>
+		</center>
+		<south size="30px" border="0" style="background:#81DAF5;">
+			<div align="center" style="margin-top:5px">
+				<label value="Copyright 2014" />
+			</div>
+		</south>
+	</borderlayout>
+</window>
